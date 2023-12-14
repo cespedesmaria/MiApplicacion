@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="contt" color="primary">
+    <ion-title class="titulo">Inicio de sesion  <p class="logo">   AsisDUOC</p> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="form-box">
+    <ion-img class="imge"
+    src="assets/icon/1.png"
+  ></ion-img>
+<form [formGroup]="formularioLogin" class="form">
+    <div class="form-container">
+      <input formControlName="nombre" type="text" class="input" placeholder="Nombre Usuario">
+			<input formControlName="contrasena" type="password" class="input" placeholder="Contraseña">
+    </div>
+    <button (click)="ingresar()">
+      <span class="span-mother">
+          <span>I</span>
+          <span>N</span>
+          <span>G</span>
+          <span>R</span>
+          <span>E</span>
+          <span>S</span>
+          <span>A</span>
+          <span>R</span>
+      </span>
+      <span class="span-mother2">
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>R</span>
+        <span>E</span>
+        <span>S</span>
+        <span>A</span>
+        <span>R</span>
+      </span>
+    </button>
+</form>
+<div class="form-section">
+  <p>Crear una cuenta <a href="/registrar">Registrar</a> </p>
+  <p><a href="/recuperar">¿Olvidaste tu contraseña?</a> </p>
+</div>
+  
+</div>
+
+</ion-content>

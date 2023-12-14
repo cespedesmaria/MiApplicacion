@@ -1,20 +1,51 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="primary">
+    <!--<ion-title class="titulo">Bienvenido {{ nombreUsuario }}</ion-title>-->
+    <div class='content'>
+      <div class='visible'>
+        <p>
+          Bienvenido 
+        </p>
+        <ul>
+          <li> usuario !</li>
+          <li> estudiante !</li>
+          <li>{{  nombreUsuario}} !</li>
+        </ul>
+      </div>
+    </div>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="form-box">
+    <h1 class="asi">Asistencias</h1>
+    <ion-img class="img" src="assets/icon/2.png"></ion-img>
+    <form class="form">
+      <div class="form-container">
+      </div>
+      <p class="regl">Por reglamento académico tienes que tener un 75% de asistencia en cada uno de tus ramos para aprobar el curso, en
+      esta sección podrás revisar el avance y así no repetir por no ir a clases.</p>
+    </form>
+    
+    <div class="barra">
+      <div class="radio-input">
+        <label>
+          <input (click)="startScan()" type="radio" id="value-1" name="value-radio" value="value-1">
+          <ion-icon name="camera-outline"></ion-icon>
+        </label>
+        <label>
+          <input (click)="compartirApp()" type="radio" id="value-2" name="value-radio" value="value-2">
+          <ion-icon name="share-social-outline"></ion-icon>
+        </label>
+        <label>
+          <input (click)="cerrarSesion()" type="radio" id="value-3" name="value-radio" value="value-3" slot="start"
+            ios="exit" md="exit">
+          <ion-icon name="log-out-outline"></ion-icon>
+        </label>
+        <span class="selection"></span>
+      </div>
+    </div>
   </div>
 </ion-content>

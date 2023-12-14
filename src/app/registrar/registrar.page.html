@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="contt" color="primary">
+    <ion-title class="titulo">Registro  <p class="logo">   AsisDUOC</p> </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="form-box">
+    <ion-img class="imge"
+    src="assets/icon/3.png"
+  ></ion-img>
+    <form [formGroup]="formularioLogin" class="form">
+        <div class="form-container">
+          <input formControlName="nombre" type="text" class="input" placeholder="Nombre">
+          <input formControlName="contrasena" type="password" class="input" placeholder="Contraseña">
+          <input formControlName="confirmar_contrasena" type="password" class="input" placeholder="Contraseña">
+        </div>
+        <button (click)="registrar()">
+          <span class="span-mother">
+            <span>R</span>
+            <span>E</span>
+            <span>G</span>
+            <span>I</span>
+            <span>S</span>
+            <span>T</span>
+            <span>R</span>
+            <span>A</span>
+            <span>R</span>
+         </span>
+      <span class="span-mother2">
+          <span>R</span>
+          <span>E</span>
+          <span>G</span>
+          <span>I</span>
+          <span>S</span>
+          <span>T</span>
+          <span>R</span>
+          <span>A</span>
+          <span>R</span>
+      </span>
+    </button>
+
+        <button class="VOLVER" [routerLink]="['/login']">VOLVER</button>
+    </form>
+    </div>
+</ion-content>

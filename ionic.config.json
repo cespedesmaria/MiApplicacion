@@ -1,5 +1,7 @@
 {
-  "name": "miapp",
-  "integrations": {},
+  "name": "myapp",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
